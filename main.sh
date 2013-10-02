@@ -172,8 +172,8 @@ done
 ########################
 
 main(){
-	insHead()
-	insBody()
+	insHead
+	insBody
 }
 main
 
