@@ -15,7 +15,7 @@ echo "<!-- minefield project A-XC13, proudly made with bash, cronjobs and html -
 echo "<!-- (C) 2013 nekosilvertail, cc-by-sa - -->"
 echo "<head>"
 echo "<title>$title</title>"
-echo "<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' />"
+echo "<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />"
 echo "<link rel='SHORTCUT ICON' href='icon.ico' type='image/x-icon'>"
 echo "<link rel='stylesheet' href='stylesheet.css' type='text/css' media='screen' />"
 echo "</head>"
@@ -37,7 +37,7 @@ echo "<div class='stripes_1'></div>"
 
 #<!-- Header // -->
 echo "<a href='./index.html'>"
-echo "div class='head'></div>"
+echo "<div class='head'></div>"
 echo "</a>"
 #<!-- // Header -->
 
