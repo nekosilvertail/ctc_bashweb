@@ -156,9 +156,9 @@ insNews()
 
 for i in $(ls -t news/*.ctcn)
 do
-	datum=$(cat test1.ctcn | cut -d";" -f 1 | head -n 1) 
-	newstitel=$(cat test1.ctcn | cut -d";" -f 2 | head -n 1)	
-	text="<p>$(cat test1.ctcn| cut -d";" -f 3 | sed s/$/\<\\/p\>\<p\>/g)Lg, euer CMGC-Team</p>" 	
+	datum=$(cat $i | cut -d";" -f 1 | head -n 1) 
+	newstitel=$(cat $i | cut -d";" -f 2 | head -n 1)	
+	text="<p>$(cat $i| cut -d";" -f 3 | sed s/$/\<\\/p\>\<p\>/g)Lg, euer CMGC-Team</p>" 	
 	#<!-- NACHRICHT -->
 	echo "<h2>$datum</h2>"
 	echo "<h3>$newstitel</h3>"
