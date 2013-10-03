@@ -265,7 +265,7 @@ insUeberUns(){
 	echo "<p>Neben der ständigen Präsenz im Teamspeak treffen sich unsere Mitglieder jedes Jahr auf der \"Sommer-LAN\", eine LAN-Party die jeden Sommer in Friesach (Kärnten, Österreich) stattfindet.</p>"
 	echo "<p>Wir besitzen im Moment 3 Server, 2 davon als dedizierte Game-Server</p>"
 	echo "<br />"
-	echo "h2>Darf ich mitmachen?</h2>"
+	echo "<h2>Darf ich mitmachen?</h2>"
 	echo "<p>Natürlich! - Jeder der über 16 Jahre alt ist darf gerne mitmachen. Dazu müsst ihr euch aber bewerben. Lest vorher die <a href='www.team-ctc.at/regeln.html>Community-Richtlinien</a> durch! ;) Und denk dran: Hier geht Freundschaft immer vor! Kein Platz für CoD-Pr0-Pwner-Kinder.</p>"
 	echo "<br />"
 	echo "<h2>Wo kann ich mich bewerben?</h2>"
