@@ -45,7 +45,6 @@ echo "<!-- (C) 2013 nekosilvertail, cc-by-sa - -->"
 echo "<head>"
 echo "<title>$title</title>"
 echo "<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />"
-echo "<link rel='SHORTCUT ICON' href='icon.ico' type='image/x-icon'>"
 echo "<link rel='stylesheet' href='stylesheet.css' type='text/css' media='screen' />"
 echo "</head>"
 }
@@ -65,9 +64,7 @@ echo "<div class='stripes_1'></div>"
 #<!-- // Background Stripes 1 -->
 
 #<!-- Header // -->
-echo "<a href='./index.html'>"
 echo "<div class='head'></div>"
-echo "</a>"
 #<!-- // Header -->
 
 echo "<div class='sub'>"
@@ -118,7 +115,7 @@ echo "<div class='panel_head'>&nbsp;.:&nbsp;Trackmania</div>"
 echo "<div class='panel_content'>"
 echo "<div class='content-content'>"
 #<!-- Panel Nav #2 Content // -->
-echo "<div align='center'><img src='http://noxish.team-ctc.at/stats/serverstats.php?plid=&serv=0&statsbox=1'></div>"
+echo "<div align='center'><img src='http://noxish.team-ctc.at/stats/serverstats.php?plid=&amp;serv=0&amp;statsbox=1' alt='tm server stats' /></div>"
 #<!-- // Panel Nav #2 Content -->
 echo "</div>"
 echo "</div>"
@@ -214,7 +211,7 @@ insMitglieder()
 	
 	echo "<h4>Technik-Abteilung</h4>"
 	echo "<p><b>Leitung: nekosilvertail</b></p>"
-	echo "<p><b>Teammitglieder: </p>"
+	echo "<p><b>Teammitglieder: </b></p>"
 	echo "<p><b>"
 	echo "Edo-Ram64<br />"
 	echo "Noxish<br />"
@@ -223,7 +220,7 @@ insMitglieder()
 	
 	echo "<h4>Community-Abteilung</h4>"
 	echo "<p><b>Leitung: Noxis</b></p>"
-	echo "<p><b>Teammitglieder: </p>"
+	echo "<p><b>Teammitglieder: </b></p>"
 	echo "<p><b>"
 	echo "MuscleCar<br />"
 	echo "MTX<br />"
@@ -232,7 +229,7 @@ insMitglieder()
 	
 	echo "<h4>Design-Abteilung</h4>"
 	echo "<p><b>Leitung: MuscleCar</b></p>"
-	echo "<p><b>Teammitglieder: </p>"
+	echo "<p><b>Teammitglieder: </b></p>"
 	echo "<p><b>"
 	echo "nekosilvertail<br />"
 	echo "noxis<br />"
@@ -241,7 +238,7 @@ insMitglieder()
 
 	echo "<h4>Trackmania-Abteilung</h4>"
 	echo "<p><b>Leitung: MTX</b></p>"
-	echo "<p><b>Teammitglieder: </p>"
+	echo "<p><b>Teammitglieder: </b></p>"
 	echo "<p><b>"
 	echo "Wanderknabe<br />"
 	echo "hpd|Sherko<br />"
@@ -255,6 +252,9 @@ insMitglieder()
 		echo "$(echo $i | cut -d '/' -f 2 | cut -d '.' -f 1)<br />"
 	done	
 	echo "</b></p>"
+	usercount_r=$(ls -l user/*.ctcu | wc -l)
+	usercount=$(echo $usercount_r - 1 | bc)
+	echo "<p>Derzeit haben wir $usercount Mitglieder</p>"
 }
 
 insUeberUns(){
@@ -266,7 +266,7 @@ insUeberUns(){
 	echo "<p>Wir besitzen im Moment 3 Server, 2 davon als dedizierte Game-Server</p>"
 	echo "<br />"
 	echo "<h2>Darf ich mitmachen?</h2>"
-	echo "<p>Natürlich! - Jeder der über 16 Jahre alt ist darf gerne mitmachen. Dazu müsst ihr euch aber bewerben. Lest vorher die <a href='www.team-ctc.at/regeln.html>Community-Richtlinien</a> durch! ;) Und denk dran: Hier geht Freundschaft immer vor! Kein Platz für CoD-Pr0-Pwner-Kinder.</p>"
+	echo "<p>Natürlich! - Jeder der über 16 Jahre alt ist darf gerne mitmachen. Dazu müsst ihr euch aber bewerben. Lest vorher die <a href='www.team-ctc.at/regeln.html'>Community-Richtlinien</a> durch! ;) Und denk dran: Hier geht Freundschaft immer vor! Kein Platz für CoD-Pr0-Pwner-Kinder.</p>"
 	echo "<br />"
 	echo "<h2>Wo kann ich mich bewerben?</h2>"
 	echo "<p>Schau doch einfach einmal auf der Kontakt-Seite nach: <a href='kontakt.html'>Kontakt</a></p>"
@@ -284,7 +284,7 @@ insImpressum(){
 insKontakt(){
 	echo "<h2>Bewerben bei \"CMGC\"</h2>"
 	echo "<p>Wenn du interesse an unserer Gemeinschaft hast, kannst du dich (sofern du dein <u>16. Lebensjahr</u> vollendet hast) gerne bei uns bewerben.</p>"
-	echo "<p>Dazu liest du am besten vorher schon die ><a href=http://team-ctc.at/regeln.html>Community-Richtlinen</a>< durch. Schreibe dann eine eMail mit dem Betreff "Bewerbung" an bewerbung[@]team-ctc[.]at. In dieser eMail kannst du dich unseren Administratoren vorstellen! Denk' 'dran! Der erste Eindruck ist meist der wichtigste!</p>"
+	echo "<p>Dazu liest du am besten vorher schon die ><a href='http://team-ctc.at/regeln.html'>Community-Richtlinen</a> durch. Schreibe dann eine eMail mit dem Betreff "Bewerbung" an bewerbung[@]team-ctc[.]at. In dieser eMail kannst du dich unseren Administratoren vorstellen! Denk' 'dran! Der erste Eindruck ist meist der wichtigste!</p>"
 	echo "<p>Melde dich eventuell auf unserem Teamspeak! (Adresse: team-ctc.at)<br /> Stell dich uns vor, erzähle uns etwas über dich und zeige uns, daß du an uns interessiert bist!</p>"
 	echo "<h2>Support</h2>"
 	echo "<p>Hast du ein Problem auf einem unserer Server? Gibt es etwas das du uns mitteilen willst? Willst du uns Strecken für den Trackmania-Server senden? Hast du ein technisches Problem mit einem Spiel oder deinem Ccmputer? Wir helfen gerne!</p>"
